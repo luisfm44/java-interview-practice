@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "IsSubsequence",
+      "request": "launch",
+      "mainClass": "com.interview.strings.IsSubsequence",
+      "projectName": "java-interview-practice"
+    },
+    {
+      "type": "java",
       "name": "GroupAnagrams",
       "request": "launch",
       "mainClass": "com.interview.strings.GroupAnagrams",
