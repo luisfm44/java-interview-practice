@@ -12,7 +12,7 @@ Proyecto Maven con **Java 21** para practicar ejercicios típicos de entrevistas
 ```
 src/main/java/com/interview/
 ├── arrays/        # Two Sum (resuelto), Max Subarray, Binary Search
-├── strings/       # Valid Anagram, Reverse String
+├── strings/       # Reverse String, Valid Anagram, Valid Palindrome, y más
 ├── linkedlist/    # Reverse Linked List
 ├── stacks/        # Valid Parentheses
 ├── trees/         # Invert Binary Tree
@@ -51,8 +51,18 @@ Si tu `JAVA_HOME` por defecto no es Java 21, el script `mvn-java21.sh` lo fuerza
 | Arrays | Two Sum | Fácil (resuelto) |
 | Arrays | Maximum Subarray | Medio |
 | Arrays | Binary Search | Fácil |
-| Strings | Valid Anagram | Fácil |
 | Strings | Reverse String | Fácil |
+| Strings | Valid Anagram | Fácil |
+| Strings | Valid Palindrome | Fácil |
+| Strings | First Unique Character | Fácil |
+| Strings | Longest Common Prefix | Fácil |
+| Strings | Is Subsequence | Fácil |
+| Strings | Length of Last Word | Fácil |
+| Strings | Reverse Words | Medio |
+| Strings | Valid Palindrome II | Medio |
+| Strings | strStr (Find Index) | Medio |
+| Strings | Longest Substring Without Repeating | Medio |
+| Strings | Group Anagrams | Medio |
 | Linked List | Reverse Linked List | Fácil |
 | Stacks | Valid Parentheses | Fácil |
 | Trees | Invert Binary Tree | Fácil |

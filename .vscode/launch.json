@@ -1,0 +1,32 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "GroupAnagrams",
+      "request": "launch",
+      "mainClass": "com.interview.strings.GroupAnagrams",
+      "projectName": "java-interview-practice"
+    },
+    {
+      "type": "java",
+      "name": "FirstUniqueCharacter",
+      "request": "launch",
+      "mainClass": "com.interview.strings.FirstUniqueCharacter",
+      "projectName": "java-interview-practice"
+    },
+    {
+      "type": "java",
+      "name": "Run archivo actual (main)",
+      "request": "launch",
+      "mainClass": "${file}"
+    },
+    {
+      "type": "java",
+      "name": "Debug archivo actual (main)",
+      "request": "launch",
+      "mainClass": "${file}",
+      "console": "integratedTerminal"
+    }
+  ]
+}

@@ -7,7 +7,15 @@ package com.interview.strings;
 public class ReverseString {
 
     public void reverseString(char[] s) {
-        // TODO: usa dos punteros desde los extremos
-        throw new UnsupportedOperationException("Implementa reverseString");
+        int left = 0;
+        int right = s.length - 1;
+
+        while (left < right) {
+            char temp = s[left];
+            s[left] = s[right];
+            s[right] = temp;
+            left++;
+            right--;
+        }
     }
 }

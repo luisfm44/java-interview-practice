@@ -3,13 +3,40 @@
   "java.configuration.runtimes": [
     {
       "name": "JavaSE-21",
-      "path": "/usr/lib/jvm/java-21-openjdk-amd64",
+      "path": "/Users/luisfelipemarincano/Library/Java/JavaVirtualMachines/ms-21.0.8/Contents/Home",
       "default": true
     }
   ],
-  "java.jdt.ls.java.home": "/usr/lib/jvm/java-21-openjdk-amd64",
+  "java.jdt.ls.java.home": "/Users/luisfelipemarincano/Library/Java/JavaVirtualMachines/ms-21.0.8/Contents/Home",
   "java.import.maven.enabled": true,
+  "java.autobuild.enabled": true,
+  "java.server.launchMode": "Standard",
+  "java.showBuildStatusOnStart.enabled": true,
   "java.test.config": {
-    "workingDirectory": "${workspaceFolder}/java-interview-practice"
-  }
+    "workingDirectory": "${workspaceFolder}"
+  },
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 500,
+  "problems.autoReveal": true,
+  "problems.decorations.enabled": true,
+  "editor.renderValidationDecorations": "on",
+  "editor.inlineSuggest.enabled": false,
+  "editor.quickSuggestions": {
+    "other": "off",
+    "comments": "off",
+    "strings": "off"
+  },
+  "editor.suggestOnTriggerCharacters": false,
+  "editor.suggest.enabled": false,
+  "editor.wordBasedSuggestions": "off",
+  "editor.parameterHints.enabled": false,
+  "editor.tabCompletion": "off",
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.acceptSuggestionOnEnter": "off",
+  "editor.suggest.showWords": false,
+  "editor.suggest.showSnippets": false,
+  "cursor.completions.enabled": false,
+  "cursor.cpp.enablePartialAccepts": false,
+  "cursor.cpp.disabledLanguages": ["java"],
+  "java.completion.enabled": false
 }
