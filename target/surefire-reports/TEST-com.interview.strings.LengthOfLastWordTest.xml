@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.interview.strings.GroupAnagramsTest" time="0.018" tests="3" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.interview.strings.LengthOfLastWordTest" time="0.017" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,10 +12,10 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="001"/>
     <property name="sun.boot.library.path" value="/Users/luisfelipemarincano/Library/Java/JavaVirtualMachines/ms-21.0.8/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/luisfelipemarincano/Documents/java-interview-practice/target/surefire/surefirebooter-20260617190939948_3.jar /Users/luisfelipemarincano/Documents/java-interview-practice/target/surefire 2026-06-17T19-09-39_917-jvmRun1 surefire-20260617190939948_1tmp surefire_0-20260617190939948_2tmp"/>
+    <property name="sun.java.command" value="/Users/luisfelipemarincano/Documents/java-interview-practice/target/surefire/surefirebooter-20260618180028592_3.jar /Users/luisfelipemarincano/Documents/java-interview-practice/target/surefire 2026-06-18T18-00-28_555-jvmRun1 surefire-20260618180028592_1tmp surefire_0-20260618180028592_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
-    <property name="test" value="GroupAnagramsTest"/>
+    <property name="test" value="LengthOfLastWordTest"/>
     <property name="surefire.test.class.path" value="/Users/luisfelipemarincano/Documents/java-interview-practice/target/test-classes:/Users/luisfelipemarincano/Documents/java-interview-practice/target/classes:/Users/luisfelipemarincano/.m2/repository/org/junit/jupiter/junit-jupiter/5.11.4/junit-jupiter-5.11.4.jar:/Users/luisfelipemarincano/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.11.4/junit-jupiter-api-5.11.4.jar:/Users/luisfelipemarincano/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/luisfelipemarincano/.m2/repository/org/junit/platform/junit-platform-commons/1.11.4/junit-platform-commons-1.11.4.jar:/Users/luisfelipemarincano/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/luisfelipemarincano/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.11.4/junit-jupiter-params-5.11.4.jar:/Users/luisfelipemarincano/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.11.4/junit-jupiter-engine-5.11.4.jar:/Users/luisfelipemarincano/.m2/repository/org/junit/platform/junit-platform-engine/1.11.4/junit-platform-engine-1.11.4.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/Users/luisfelipemarincano"/>
@@ -30,7 +30,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/luisfelipemarincano/Documents/java-interview-practice/target/surefire/surefirebooter-20260617190939948_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/luisfelipemarincano/Documents/java-interview-practice/target/surefire/surefirebooter-20260618180028592_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="21.0.8+9-LTS"/>
@@ -59,7 +59,7 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="handlesEmptyStrings" classname="com.interview.strings.GroupAnagramsTest" time="0.009"/>
-  <testcase name="groupsAnagramsTogether" classname="com.interview.strings.GroupAnagramsTest" time="0.001"/>
-  <testcase name="handlesSingleString" classname="com.interview.strings.GroupAnagramsTest" time="0.0"/>
+  <testcase name="ignoresTrailingSpaces" classname="com.interview.strings.LengthOfLastWordTest" time="0.008"/>
+  <testcase name="handlesSingleWord" classname="com.interview.strings.LengthOfLastWordTest" time="0.0"/>
+  <testcase name="countsLastWordInSimpleSentence" classname="com.interview.strings.LengthOfLastWordTest" time="0.001"/>
 </testsuite>
