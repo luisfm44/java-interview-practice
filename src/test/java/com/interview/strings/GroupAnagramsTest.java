@@ -39,6 +39,33 @@ class GroupAnagramsTest {
     assertEquals(List.of(List.of("", "")), normalize(result));
   }
 
+  @Test
+  void imperativeGroupsAnagramsTogether() {
+    List<List<String>> result = groupAnagrams.groupAnagramsImperative(
+        new String[] { "eat", "tea", "tan", "ate", "nat", "bat" });
+
+    assertEquals(
+        List.of(
+            List.of("ate", "eat", "tea"),
+            List.of("bat"),
+            List.of("nat", "tan")),
+        normalize(result));
+  }
+
+  @Test
+  void imperativeHandlesSingleString() {
+    List<List<String>> result = groupAnagrams.groupAnagramsImperative(new String[] { "a" });
+
+    assertEquals(List.of(List.of("a")), normalize(result));
+  }
+
+  @Test
+  void imperativeHandlesEmptyStrings() {
+    List<List<String>> result = groupAnagrams.groupAnagramsImperative(new String[] { "", "" });
+
+    assertEquals(List.of(List.of("", "")), normalize(result));
+  }
+
   private List<List<String>> normalize(List<List<String>> groups) {
     List<List<String>> normalized = new ArrayList<>();
     for (List<String> group : groups) {

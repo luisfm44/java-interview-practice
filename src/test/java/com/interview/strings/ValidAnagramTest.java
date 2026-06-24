@@ -23,4 +23,19 @@ class ValidAnagramTest {
   void rejectsSameLengthButDifferentCharacters() {
     assertFalse(validAnagram.isAnagram("hello", "bello"));
   }
+
+  @Test
+  void imperativeRecognizesValidAnagrams() {
+    assertTrue(validAnagram.isAnagramImperative("anagram", "nagaram"));
+  }
+
+  @Test
+  void imperativeRejectsDifferentLengths() {
+    assertFalse(validAnagram.isAnagramImperative("rat", "car"));
+  }
+
+  @Test
+  void imperativeRejectsSameLengthButDifferentCharacters() {
+    assertFalse(validAnagram.isAnagramImperative("hello", "bello"));
+  }
 }

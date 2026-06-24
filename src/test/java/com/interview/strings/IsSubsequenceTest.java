@@ -23,4 +23,19 @@ class IsSubsequenceTest {
   void acceptsEmptySubsequence() {
     assertTrue(isSubsequence.isSubsequence("", "ahbgdc"));
   }
+
+  @Test
+  void imperativeRecognizesValidSubsequence() {
+    assertTrue(isSubsequence.isSubsequenceImperative("abc", "ahbgdc"));
+  }
+
+  @Test
+  void imperativeRejectsInvalidSubsequence() {
+    assertFalse(isSubsequence.isSubsequenceImperative("axc", "ahbgdc"));
+  }
+
+  @Test
+  void imperativeAcceptsEmptySubsequence() {
+    assertTrue(isSubsequence.isSubsequenceImperative("", "ahbgdc"));
+  }
 }

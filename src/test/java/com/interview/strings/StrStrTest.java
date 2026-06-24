@@ -20,6 +20,21 @@ class StrStrTest {
 
   @Test
   void findsNeedleInMiddle() {
-    assertEquals(15, strStr.strStr("hellohellohello", "llohel"));
+    assertEquals(2, strStr.strStr("hellohellohello", "llohel"));
+  }
+
+  @Test
+  void imperativeFindsNeedleAtBeginning() {
+    assertEquals(0, strStr.strStrImperative("sadbutsad", "sad"));
+  }
+
+  @Test
+  void imperativeReturnsMinusOneWhenNeedleMissing() {
+    assertEquals(-1, strStr.strStrImperative("leetcode", "leeto"));
+  }
+
+  @Test
+  void imperativeFindsNeedleInMiddle() {
+    assertEquals(2, strStr.strStrImperative("hellohellohello", "llohel"));
   }
 }

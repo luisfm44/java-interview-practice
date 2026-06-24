@@ -22,4 +22,19 @@ class TwoSumTest {
   void handlesDuplicateValues() {
     assertArrayEquals(new int[] { 0, 1 }, twoSum.twoSum(new int[] { 3, 3 }, 6));
   }
+
+  @Test
+  void imperativeReturnsIndicesForClassicExample() {
+    assertArrayEquals(new int[] { 0, 1 }, twoSum.twoSumImperative(new int[] { 2, 7, 11, 15 }, 9));
+  }
+
+  @Test
+  void imperativeReturnsIndicesWhenSolutionIsNotAdjacent() {
+    assertArrayEquals(new int[] { 1, 2 }, twoSum.twoSumImperative(new int[] { 3, 2, 4 }, 6));
+  }
+
+  @Test
+  void imperativeHandlesDuplicateValues() {
+    assertArrayEquals(new int[] { 0, 1 }, twoSum.twoSumImperative(new int[] { 3, 3 }, 6));
+  }
 }

@@ -22,4 +22,19 @@ class ReverseWordsTest {
   void handlesSingleWord() {
     assertEquals("a", reverseWords.reverseWords("a"));
   }
+
+  @Test
+  void imperativeReversesWordOrder() {
+    assertEquals("blue is sky the", reverseWords.reverseWordsImperative("the sky is blue"));
+  }
+
+  @Test
+  void imperativeTrimsExtraSpaces() {
+    assertEquals("world hello", reverseWords.reverseWordsImperative("  hello world  "));
+  }
+
+  @Test
+  void imperativeHandlesSingleWord() {
+    assertEquals("a", reverseWords.reverseWordsImperative("a"));
+  }
 }

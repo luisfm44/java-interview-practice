@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "LongestCommonPrefix",
+      "request": "launch",
+      "mainClass": "com.interview.strings.LongestCommonPrefix",
+      "projectName": "java-interview-practice"
+    },
+    {
+      "type": "java",
       "name": "IsSubsequence",
       "request": "launch",
       "mainClass": "com.interview.strings.IsSubsequence",

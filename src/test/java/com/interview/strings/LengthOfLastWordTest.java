@@ -22,4 +22,19 @@ class LengthOfLastWordTest {
   void handlesSingleWord() {
     assertEquals(5, lengthOfLastWord.lengthOfLastWord("luffy"));
   }
+
+  @Test
+  void imperativeCountsLastWordInSimpleSentence() {
+    assertEquals(5, lengthOfLastWord.lengthOfLastWordImperative("Hello World"));
+  }
+
+  @Test
+  void imperativeIgnoresTrailingSpaces() {
+    assertEquals(4, lengthOfLastWord.lengthOfLastWordImperative("   fly me   to   the moon  "));
+  }
+
+  @Test
+  void imperativeHandlesSingleWord() {
+    assertEquals(5, lengthOfLastWord.lengthOfLastWordImperative("luffy"));
+  }
 }

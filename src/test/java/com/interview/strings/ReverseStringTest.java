@@ -21,4 +21,18 @@ class ReverseStringTest {
     reverseString.reverseString(input);
     assertArrayEquals(new char[] { 'h', 'a', 'n', 'n', 'a', 'H' }, input);
   }
+
+  @Test
+  void imperativeReversesEvenLengthArray() {
+    char[] input = { 'h', 'e', 'l', 'l', 'o' };
+    reverseString.reverseStringImperative(input);
+    assertArrayEquals(new char[] { 'o', 'l', 'l', 'e', 'h' }, input);
+  }
+
+  @Test
+  void imperativeReversesOddLengthArray() {
+    char[] input = { 'H', 'a', 'n', 'n', 'a', 'h' };
+    reverseString.reverseStringImperative(input);
+    assertArrayEquals(new char[] { 'h', 'a', 'n', 'n', 'a', 'H' }, input);
+  }
 }

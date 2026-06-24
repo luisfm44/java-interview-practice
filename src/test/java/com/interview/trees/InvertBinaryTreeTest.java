@@ -28,6 +28,20 @@ class InvertBinaryTreeTest {
     assertEquals(List.of(1), levelOrder(inverted));
   }
 
+  @Test
+  void imperativeInvertsSampleTree() {
+    TreeNode root = TreeNode.of(4, 2, 7, 1, 3, 6, 9);
+    TreeNode inverted = invertBinaryTree.invertTreeImperative(root);
+    assertEquals(List.of(4, 7, 2, 9, 6, 3, 1), levelOrder(inverted));
+  }
+
+  @Test
+  void imperativeInvertsSingleNode() {
+    TreeNode root = TreeNode.of(1);
+    TreeNode inverted = invertBinaryTree.invertTreeImperative(root);
+    assertEquals(List.of(1), levelOrder(inverted));
+  }
+
   private static List<Integer> levelOrder(TreeNode root) {
     if (root == null) {
       return List.of();

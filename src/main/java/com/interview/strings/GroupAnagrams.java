@@ -1,33 +1,26 @@
 package com.interview.strings;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
 
 /**
  * LeetCode 49 - Group Anagrams.
- * Agrupa strings que son anagramas entre sí.
+ * Agrupa strings que son anagramas entre si.
  */
 public class GroupAnagrams {
 
     public static void main(String[] args) {
-        GroupAnagrams solution = new GroupAnagrams();
-
-        List<List<String>> result = solution.groupAnagrams(
-            new String[] { "eat", "tea", "tan", "ate", "nat", "bat" });
-
-        System.out.println(result);
+        // TODO: crea casos manuales para probar groupAnagrams cuando implementes la solucion.
     }
 
     public List<List<String>> groupAnagrams(String[] strs) {
-        return Arrays.stream(strs)
-            .collect(Collectors.collectingAndThen(
-                Collectors.groupingBy((String s) -> {
-                    char[] text = s.toCharArray();
-                    Arrays.sort(text);
-                    return new String(text);
-                }),
-                map -> new ArrayList<>(map.values())));
+        throw new UnsupportedOperationException("Implementa groupAnagrams");
+    }
+
+    public List<List<String>> groupAnagramsImperative(String[] strs) {
+        throw new UnsupportedOperationException("Implementa groupAnagramsImperative");
+    }
+
+    public List<List<String>> groupAnagramsFunctional(String[] strs) {
+        throw new UnsupportedOperationException("Implementa groupAnagramsFunctional");
     }
 }

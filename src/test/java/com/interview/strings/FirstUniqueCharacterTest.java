@@ -22,4 +22,19 @@ class FirstUniqueCharacterTest {
   void returnsMinusOneWhenNoUniqueCharacter() {
     assertEquals(-1, firstUniqueCharacter.firstUniqChar("aabb"));
   }
+
+  @Test
+  void imperativeFindsFirstUniqueAtBeginning() {
+    assertEquals(0, firstUniqueCharacter.firstUniqCharImperative("leetcode"));
+  }
+
+  @Test
+  void imperativeFindsFirstUniqueInMiddle() {
+    assertEquals(2, firstUniqueCharacter.firstUniqCharImperative("loveleetcode"));
+  }
+
+  @Test
+  void imperativeReturnsMinusOneWhenNoUniqueCharacter() {
+    assertEquals(-1, firstUniqueCharacter.firstUniqCharImperative("aabb"));
+  }
 }

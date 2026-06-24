@@ -23,4 +23,20 @@ class BinarySearchTest {
     assertEquals(0, binarySearch.search(new int[] { 1, 2, 3 }, 1));
     assertEquals(2, binarySearch.search(new int[] { 1, 2, 3 }, 3));
   }
+
+  @Test
+  void imperativeFindsExistingTarget() {
+    assertEquals(4, binarySearch.searchImperative(new int[] { -1, 0, 3, 5, 9, 12 }, 9));
+  }
+
+  @Test
+  void imperativeReturnsMinusOneWhenTargetMissing() {
+    assertEquals(-1, binarySearch.searchImperative(new int[] { -1, 0, 3, 5, 9, 12 }, 2));
+  }
+
+  @Test
+  void imperativeFindsTargetAtBoundaries() {
+    assertEquals(0, binarySearch.searchImperative(new int[] { 1, 2, 3 }, 1));
+    assertEquals(2, binarySearch.searchImperative(new int[] { 1, 2, 3 }, 3));
+  }
 }

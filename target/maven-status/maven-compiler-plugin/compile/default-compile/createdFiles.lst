@@ -1,5 +1,6 @@
 com/interview/strings/StrStr.class
 com/interview/strings/ValidPalindromeII.class
+com/interview/strings/LengthOfLastWord.class
 com/interview/arrays/MaxSubarray.class
 com/interview/strings/GroupAnagrams.class
 com/interview/strings/FirstUniqueCharacter.class

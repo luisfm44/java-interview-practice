@@ -6,16 +6,19 @@ package com.interview.strings;
  */
 public class ReverseString {
 
-    public void reverseString(char[] s) {
-        int left = 0;
-        int right = s.length - 1;
+    public static void main(String[] args) {
+        // TODO: crea casos manuales para probar reverseString cuando implementes la solucion.
+    }
 
-        while (left < right) {
-            char temp = s[left];
-            s[left] = s[right];
-            s[right] = temp;
-            left++;
-            right--;
-        }
+    public void reverseString(char[] s) {
+        throw new UnsupportedOperationException("Implementa reverseString");
+    }
+
+    public void reverseStringImperative(char[] s) {
+        throw new UnsupportedOperationException("Implementa reverseStringImperative");
+    }
+
+    public void reverseStringFunctional(char[] s) {
+        throw new UnsupportedOperationException("Implementa reverseStringFunctional");
     }
 }

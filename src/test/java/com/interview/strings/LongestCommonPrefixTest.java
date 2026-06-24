@@ -25,4 +25,22 @@ class LongestCommonPrefixTest {
     assertEquals("hello", longestCommonPrefix.longestCommonPrefix(
         new String[] { "hello" }));
   }
+
+  @Test
+  void imperativeFindsSharedPrefix() {
+    assertEquals("fl", longestCommonPrefix.longestCommonPrefixImperative(
+        new String[] { "flower", "flow", "flight" }));
+  }
+
+  @Test
+  void imperativeReturnsEmptyWhenNoCommonPrefix() {
+    assertEquals("", longestCommonPrefix.longestCommonPrefixImperative(
+        new String[] { "dog", "racecar", "car" }));
+  }
+
+  @Test
+  void imperativeHandlesSingleString() {
+    assertEquals("hello", longestCommonPrefix.longestCommonPrefixImperative(
+        new String[] { "hello" }));
+  }
 }

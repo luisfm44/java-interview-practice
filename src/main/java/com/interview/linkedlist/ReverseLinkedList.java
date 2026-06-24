@@ -8,8 +8,19 @@ import com.interview.common.ListNode;
  */
 public class ReverseLinkedList {
 
+    public static void main(String[] args) {
+        // TODO: crea casos manuales para probar reverseList cuando implementes la solucion.
+    }
+
     public ListNode reverseList(ListNode head) {
-        // TODO: invierte la lista iterativa o recursivamente
         throw new UnsupportedOperationException("Implementa reverseList");
+    }
+
+    public ListNode reverseListImperative(ListNode head) {
+        throw new UnsupportedOperationException("Implementa reverseListImperative");
+    }
+
+    public ListNode reverseListFunctional(ListNode head) {
+        throw new UnsupportedOperationException("Implementa reverseListFunctional");
     }
 }

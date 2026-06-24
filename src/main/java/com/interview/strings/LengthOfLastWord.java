@@ -1,17 +1,24 @@
 package com.interview.strings;
 
-import java.util.ArrayDeque;
-import java.util.Arrays;
-import java.util.Deque;
-
 /**
  * LeetCode 58 - Length of Last Word.
- * Devuelve la longitud de la última palabra en un string.
+ * Devuelve la longitud de la ultima palabra en un string.
  */
 public class LengthOfLastWord {
 
+    public static void main(String[] args) {
+        // TODO: crea casos manuales para probar lengthOfLastWord cuando implementes la solucion.
+    }
+
     public int lengthOfLastWord(String s) {
-        Deque<String> words = new ArrayDeque<>(Arrays.asList(s.trim().split("\\s+")));
-        return words.getLast().length();
+        throw new UnsupportedOperationException("Implementa lengthOfLastWord");
+    }
+
+    public int lengthOfLastWordImperative(String s) {
+        throw new UnsupportedOperationException("Implementa lengthOfLastWordImperative");
+    }
+
+    public int lengthOfLastWordFunctional(String s) {
+        throw new UnsupportedOperationException("Implementa lengthOfLastWordFunctional");
     }
 }

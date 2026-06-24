@@ -1,25 +1,24 @@
 package com.interview.arrays;
 
-import java.util.HashMap;
-import java.util.Map;
-
 /**
- * LeetCode 1 - Two Sum (ejemplo resuelto).
- * Dado un arreglo y un target, devuelve los índices de dos números que sumen target.
+ * LeetCode 1 - Two Sum.
+ * Dado un arreglo y un target, devuelve los indices de dos numeros que sumen target.
  */
 public class TwoSum {
 
+    public static void main(String[] args) {
+        // TODO: crea casos manuales para probar twoSum cuando implementes la solucion.
+    }
+
     public int[] twoSum(int[] nums, int target) {
-        Map<Integer, Integer> seen = new HashMap<>();
+        throw new UnsupportedOperationException("Implementa twoSum");
+    }
 
-        for (int i = 0; i < nums.length; i++) {
-            int complement = target - nums[i];
-            if (seen.containsKey(complement)) {
-                return new int[] { seen.get(complement), i };
-            }
-            seen.put(nums[i], i);
-        }
+    public int[] twoSumImperative(int[] nums, int target) {
+        throw new UnsupportedOperationException("Implementa twoSumImperative");
+    }
 
-        throw new IllegalArgumentException("No hay solución para el target dado");
+    public int[] twoSumFunctional(int[] nums, int target) {
+        throw new UnsupportedOperationException("Implementa twoSumFunctional");
     }
 }

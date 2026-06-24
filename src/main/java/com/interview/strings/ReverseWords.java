@@ -6,8 +6,19 @@ package com.interview.strings;
  */
 public class ReverseWords {
 
+    public static void main(String[] args) {
+        // TODO: crea casos manuales para probar reverseWords cuando implementes la solucion.
+    }
+
     public String reverseWords(String s) {
-        // TODO: separa palabras, invierte el orden y únelas con un espacio
         throw new UnsupportedOperationException("Implementa reverseWords");
+    }
+
+    public String reverseWordsImperative(String s) {
+        throw new UnsupportedOperationException("Implementa reverseWordsImperative");
+    }
+
+    public String reverseWordsFunctional(String s) {
+        throw new UnsupportedOperationException("Implementa reverseWordsFunctional");
     }
 }

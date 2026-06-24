@@ -23,4 +23,19 @@ class ValidPalindromeTest {
   void acceptsEmptyString() {
     assertTrue(validPalindrome.isPalindrome(""));
   }
+
+  @Test
+  void imperativeAcceptsPalindromeWithSpacesAndPunctuation() {
+    assertTrue(validPalindrome.isPalindromeImperative("A man, a plan, a canal: Panama"));
+  }
+
+  @Test
+  void imperativeRejectsNonPalindrome() {
+    assertFalse(validPalindrome.isPalindromeImperative("race a car"));
+  }
+
+  @Test
+  void imperativeAcceptsEmptyString() {
+    assertTrue(validPalindrome.isPalindromeImperative(""));
+  }
 }

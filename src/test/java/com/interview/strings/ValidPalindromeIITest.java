@@ -23,4 +23,19 @@ class ValidPalindromeIITest {
   void rejectsWhenMoreThanOneDeletionNeeded() {
     assertFalse(validPalindromeII.validPalindrome("abc"));
   }
+
+  @Test
+  void imperativeAcceptsAlreadyValidPalindrome() {
+    assertTrue(validPalindromeII.validPalindromeImperative("aba"));
+  }
+
+  @Test
+  void imperativeAcceptsWithOneDeletion() {
+    assertTrue(validPalindromeII.validPalindromeImperative("abca"));
+  }
+
+  @Test
+  void imperativeRejectsWhenMoreThanOneDeletionNeeded() {
+    assertFalse(validPalindromeII.validPalindromeImperative("abc"));
+  }
 }

@@ -22,4 +22,18 @@ class ValidParenthesesTest {
     assertFalse(validParentheses.isValid("([)]"));
     assertFalse(validParentheses.isValid("(("));
   }
+
+  @Test
+  void imperativeAcceptsBalancedParentheses() {
+    assertTrue(validParentheses.isValidImperative("()"));
+    assertTrue(validParentheses.isValidImperative("()[]{}"));
+    assertTrue(validParentheses.isValidImperative("{[]}"));
+  }
+
+  @Test
+  void imperativeRejectsUnbalancedParentheses() {
+    assertFalse(validParentheses.isValidImperative("(]"));
+    assertFalse(validParentheses.isValidImperative("([)]"));
+    assertFalse(validParentheses.isValidImperative("(("));
+  }
 }

@@ -22,4 +22,19 @@ class LongestSubstringWithoutRepeatingTest {
   void handlesEmptyString() {
     assertEquals(0, longestSubstring.lengthOfLongestSubstring(""));
   }
+
+  @Test
+  void imperativeFindsLongestWithoutRepeats() {
+    assertEquals(3, longestSubstring.lengthOfLongestSubstringImperative("abcabcbb"));
+  }
+
+  @Test
+  void imperativeHandlesAllSameCharacter() {
+    assertEquals(1, longestSubstring.lengthOfLongestSubstringImperative("bbbbb"));
+  }
+
+  @Test
+  void imperativeHandlesEmptyString() {
+    assertEquals(0, longestSubstring.lengthOfLongestSubstringImperative(""));
+  }
 }

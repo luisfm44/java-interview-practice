@@ -26,4 +26,21 @@ class ReverseLinkedListTest {
   void handlesEmptyList() {
     assertNull(reverseLinkedList.reverseList(null));
   }
+
+  @Test
+  void imperativeReversesNonEmptyList() {
+    ListNode reversed = reverseLinkedList.reverseListImperative(ListNode.of(1, 2, 3, 4, 5));
+    assertArrayEquals(new int[] { 5, 4, 3, 2, 1 }, ListNode.toArray(reversed));
+  }
+
+  @Test
+  void imperativeHandlesSingleNode() {
+    ListNode reversed = reverseLinkedList.reverseListImperative(ListNode.of(1));
+    assertArrayEquals(new int[] { 1 }, ListNode.toArray(reversed));
+  }
+
+  @Test
+  void imperativeHandlesEmptyList() {
+    assertNull(reverseLinkedList.reverseListImperative(null));
+  }
 }
