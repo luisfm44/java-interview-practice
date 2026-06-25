@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "IntersectionOfTwoArrays",
+      "request": "launch",
+      "mainClass": "com.interview.arrays.IntersectionOfTwoArrays",
+      "projectName": "java-interview-practice"
+    },
+    {
+      "type": "java",
       "name": "ContainsDuplicate",
       "request": "launch",
       "mainClass": "com.interview.arrays.ContainsDuplicate",
