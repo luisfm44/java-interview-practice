@@ -1,5 +1,7 @@
 package com.interview.arrays;
 
+import java.util.stream.IntStream;
+
 /**
  * LeetCode 704 - Binary Search.
  * Busca target en un arreglo ordenado y devuelve su indice, o -1 si no existe.
@@ -7,18 +9,34 @@ package com.interview.arrays;
 public class BinarySearch {
 
     public static void main(String[] args) {
-        // TODO: crea casos manuales para probar search cuando implementes la solucion.
+       
+        int[] nums = {4,10,5,20, 15};
+        BinarySearch binarySearch = new BinarySearch();
+        System.out.println("Imperative ->" + binarySearch.searchImperative(nums, 5));
+        System.out.println("Functional ->" + binarySearch.searchFunctional(nums, 20));
+
     }
 
     public int search(int[] nums, int target) {
-        throw new UnsupportedOperationException("Implementa search");
+       return searchImperative(nums, target);
     }
 
     public int searchImperative(int[] nums, int target) {
-        throw new UnsupportedOperationException("Implementa searchImperative");
+        
+        for(int i = 0; i < nums.length; i++){
+            if(nums[i] == target){
+                return i;
+            }
+        }
+        
+        return -1;
     }
 
     public int searchFunctional(int[] nums, int target) {
-        throw new UnsupportedOperationException("Implementa searchFunctional");
+        
+        return IntStream.range(0, nums.length)
+            .filter(i -> nums[i] == target)
+            .findFirst()
+            .orElse(-1);
     }
 }

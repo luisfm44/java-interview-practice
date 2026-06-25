@@ -3,6 +3,34 @@
   "configurations": [
     {
       "type": "java",
+      "name": "ContainsDuplicate",
+      "request": "launch",
+      "mainClass": "com.interview.arrays.ContainsDuplicate",
+      "projectName": "java-interview-practice"
+    },
+    {
+      "type": "java",
+      "name": "TwoSum",
+      "request": "launch",
+      "mainClass": "com.interview.arrays.TwoSum",
+      "projectName": "java-interview-practice"
+    },
+    {
+      "type": "java",
+      "name": "MaxSubarray",
+      "request": "launch",
+      "mainClass": "com.interview.arrays.MaxSubarray",
+      "projectName": "java-interview-practice"
+    },
+    {
+      "type": "java",
+      "name": "BinarySearch",
+      "request": "launch",
+      "mainClass": "com.interview.arrays.BinarySearch",
+      "projectName": "java-interview-practice"
+    },
+    {
+      "type": "java",
       "name": "LongestCommonPrefix",
       "request": "launch",
       "mainClass": "com.interview.strings.LongestCommonPrefix",
