@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "MergeSortedArray",
+      "request": "launch",
+      "mainClass": "com.interview.arrays.MergeSortedArray",
+      "projectName": "java-interview-practice"
+    },
+    {
+      "type": "java",
       "name": "MajorityElement",
       "request": "launch",
       "mainClass": "com.interview.arrays.MajorityElement",
