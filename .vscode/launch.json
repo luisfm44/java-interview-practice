@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "MoveZeroes",
+      "request": "launch",
+      "mainClass": "com.interview.arrays.MoveZeroes",
+      "projectName": "java-interview-practice"
+    },
+    {
+      "type": "java",
       "name": "MissingNumber",
       "request": "launch",
       "mainClass": "com.interview.arrays.MissingNumber",
