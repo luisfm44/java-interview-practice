@@ -11,7 +11,9 @@ public class FirstUniqueCharacter {
     }
 
     public int firstUniqChar(String s) {
-        throw new UnsupportedOperationException("Implementa firstUniqChar");
+       for(int i = 0; i < s.length(); i++){
+            
+       }
     }
 
     public int firstUniqCharImperative(String s) {

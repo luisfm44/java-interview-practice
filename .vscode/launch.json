@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "PlusOne",
+      "request": "launch",
+      "mainClass": "com.interview.arrays.PlusOne",
+      "projectName": "java-interview-practice"
+    },
+    {
+      "type": "java",
       "name": "MoveZeroes",
       "request": "launch",
       "mainClass": "com.interview.arrays.MoveZeroes",

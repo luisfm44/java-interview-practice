@@ -1,0 +1,24 @@
+{
+	"folders": [
+		{
+			"path": "../../../../../.."
+		},
+		{
+			"path": "../../../../../../../python_work"
+		}
+	],
+	"settings": {
+		"java.configuration.updateBuildConfiguration": "automatic",
+		"java.import.maven.enabled": true,
+		"java.autobuild.enabled": true,
+		"java.server.launchMode": "Standard",
+		"java.showBuildStatusOnStart.enabled": true,
+		"problems.autoReveal": true,
+		"problems.decorations.enabled": true,
+		"cursor.cpp.enablePartialAccepts": false,
+		"cursor.cpp.disabledLanguages": [
+			"java"
+		],
+		"java.completion.enabled": false
+	}
+}
