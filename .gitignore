@@ -1,0 +1,9 @@
+target/
+*.class
+.DS_Store
+._*
+
+# Configuracion personal del editor y herramientas locales.
+.vscode/settings.json
+*.code-workspace
+.github/modernize/
