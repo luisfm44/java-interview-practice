@@ -19,14 +19,14 @@ src/main/java/com/interview/
 └── common/        # ListNode, TreeNode
 ```
 
-Cada ejercicio tiene tests en `src/test/java`. Solo **Two Sum** viene resuelto como referencia; el resto tiene un `TODO` para que lo implementes.
+Repositorio de soluciones con tests JUnit en `src/test/java`. Los ejercicios originales incluyen variantes imperativas y funcionales o recursivas; los ejercicios adicionales practican conjuntos, mapas e intervalos.
 
 ## Cómo practicar
 
 1. Abre la carpeta `java-interview-practice` en Cursor.
 2. Instala **Extension Pack for Java** si no lo tienes.
 3. Elige un ejercicio (por ejemplo `MaxSubarray.java`).
-4. Implementa el método marcado con `TODO`.
+4. Intenta resolverlo antes de consultar la implementación y compara las alternativas.
 5. Ejecuta los tests de esa clase.
 
 ## Comandos
@@ -42,15 +42,25 @@ Cada ejercicio tiene tests en `src/test/java`. Solo **Two Sum** viene resuelto c
 ./scripts/mvn-java21.sh compile
 ```
 
-Si tu `JAVA_HOME` por defecto no es Java 21, el script `mvn-java21.sh` lo fuerza a JDK 21.
+Puedes ejecutar `mvn test` directamente con un JDK 21 o posterior. El script respeta `JAVA_HOME`; si no está definido, busca JDK 21 en macOS y usa el Java del `PATH` en otros sistemas. No contiene rutas personales.
 
 ## Ejercicios incluidos
 
 | Tema | Ejercicio | Dificultad |
 |------|-----------|------------|
-| Arrays | Two Sum | Fácil (resuelto) |
+| Arrays | Two Sum | Fácil |
 | Arrays | Maximum Subarray | Medio |
 | Arrays | Binary Search | Fácil |
+| Arrays | Contains Duplicate | Fácil |
+| Arrays | Intersection of Two Arrays | Fácil |
+| Arrays | Majority Element | Fácil |
+| Arrays | Merge Sorted Array | Fácil |
+| Arrays | Missing Number | Fácil |
+| Arrays | Move Zeroes | Fácil |
+| Arrays | Plus One | Fácil |
+| Arrays | Best Time to Buy and Sell Stock | Fácil |
+| Arrays | Remove Duplicates from Sorted Array | Fácil |
+| Arrays | Rotate Array | Medio |
 | Strings | Reverse String | Fácil |
 | Strings | Valid Anagram | Fácil |
 | Strings | Valid Palindrome | Fácil |
@@ -67,6 +77,14 @@ Si tu `JAVA_HOME` por defecto no es Java 21, el script `mvn-java21.sh` lo fuerza
 | Stacks | Valid Parentheses | Fácil |
 | Trees | Invert Binary Tree | Fácil |
 
-## Siguiente paso
+## Ejercicios adicionales
 
-Cuando termines estos, puedes pedir más ejercicios por tema (grafos, DP, sliding window, etc.) y los agregamos al proyecto.
+- `CountUniqueNumbers`: cantidad de valores distintos, no de valores que aparecen una sola vez.
+- `FirstDuplicate`: primer valor que se repite durante el recorrido; devuelve `-1` si no hay repetidos.
+- `FrecuenciaTecnologica`: mapa de frecuencias que distingue mayúsculas y minúsculas.
+- `MostFrequentTechnology`: tecnología más frecuente; en empate gana la primera en aparecer y para entrada vacía devuelve `""`.
+- `NumAvailableServers`: máximo de trabajos simultáneos. Usa intervalos `[inicio, fin)`, de duración positiva; un servidor queda disponible exactamente al terminar un trabajo.
+
+## Archivos locales
+
+`target/`, los metadatos de macOS, `.vscode/settings.json` y los archivos `*.code-workspace` quedan fuera del control de versiones. La configuración compartida de ejecución en `.vscode/launch.json` no requiere rutas locales al JDK.
