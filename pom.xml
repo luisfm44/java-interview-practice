@@ -8,10 +8,10 @@
     <artifactId>java-interview-practice</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>Java Interview Practice</name>
-    <description>Ejercicios de entrevistas técnicas en Java 21</description>
+    <description>Ejercicios de entrevistas técnicas en Java 25</description>
 
     <properties>
-        <maven.compiler.release>21</maven.compiler.release>
+        <maven.compiler.release>25</maven.compiler.release>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <junit.version>5.11.4</junit.version>
     </properties>

@@ -4,7 +4,7 @@
     {
       "label": "Maven: compilar",
       "type": "shell",
-      "command": "./scripts/mvn-java21.sh compile -q",
+      "command": "./scripts/mvn-java25.sh compile -q",
       "group": {
         "kind": "build",
         "isDefault": true

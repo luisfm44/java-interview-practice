@@ -1,11 +1,11 @@
 # Java Interview Practice
 
-Proyecto Maven con **Java 21** para practicar ejercicios típicos de entrevistas técnicas.
+Proyecto Maven con **Java 25 (LTS)** para practicar ejercicios típicos de entrevistas técnicas.
 
 ## Requisitos
 
-- JDK 21
-- Maven 3.8+
+- JDK 25
+- Maven 3.9+
 
 ## Estructura
 
@@ -33,16 +33,16 @@ Repositorio de soluciones con tests JUnit en `src/test/java`. Los ejercicios ori
 
 ```bash
 # Desde java-interview-practice/
-./scripts/mvn-java21.sh test
+./scripts/mvn-java25.sh test
 
 # Solo un ejercicio
-./scripts/mvn-java21.sh test -Dtest=MaxSubarrayTest
+./scripts/mvn-java25.sh test -Dtest=MaxSubarrayTest
 
 # Compilar sin tests
-./scripts/mvn-java21.sh compile
+./scripts/mvn-java25.sh compile
 ```
 
-Puedes ejecutar `mvn test` directamente con un JDK 21 o posterior. El script respeta `JAVA_HOME`; si no está definido, busca JDK 21 en macOS y usa el Java del `PATH` en otros sistemas. No contiene rutas personales.
+Puedes ejecutar `mvn test` directamente con un JDK 25 o posterior. El script respeta `JAVA_HOME`; si no está definido, busca JDK 25 en macOS y usa el Java del `PATH` en otros sistemas. No contiene rutas personales.
 
 ## Ejercicios incluidos
 
