@@ -6,6 +6,21 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 class PlusOneTest {
 
+  @Test
+  void functionalHandlesNumbersBeyondLongRange() {
+    int[] digits = new int[100];
+    java.util.Arrays.fill(digits, 9);
+    int[] expected = new int[101];
+    expected[0] = 1;
+    assertArrayEquals(expected, plusOne.plusOneFunctional(digits));
+  }
+
+  @Test
+  void functionalHandlesZeroAndPartialCarry() {
+    assertArrayEquals(new int[] {1}, plusOne.plusOneFunctional(new int[] {0}));
+    assertArrayEquals(new int[] {1, 3, 0}, plusOne.plusOneFunctional(new int[] {1, 2, 9}));
+  }
+
   private final PlusOne plusOne = new PlusOne();
 
   @Test

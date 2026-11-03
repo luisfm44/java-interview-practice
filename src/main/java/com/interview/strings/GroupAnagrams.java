@@ -1,26 +1,49 @@
 package com.interview.strings;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * LeetCode 49 - Group Anagrams.
  * Agrupa strings que son anagramas entre si.
+ *
+ * PATRON: HashMap donde la clave es la version ordenada de cada palabra.
  */
 public class GroupAnagrams {
 
     public static void main(String[] args) {
-        // TODO: crea casos manuales para probar groupAnagrams cuando implementes la solucion.
+        GroupAnagrams groupAnagrams = new GroupAnagrams();
+        System.out.println(groupAnagrams.groupAnagrams(
+            new String[] {"eat", "tea", "tan", "ate", "nat", "bat"}));
     }
 
     public List<List<String>> groupAnagrams(String[] strs) {
-        throw new UnsupportedOperationException("Implementa groupAnagrams");
+        return groupAnagramsImperative(strs);
     }
 
     public List<List<String>> groupAnagramsImperative(String[] strs) {
-        throw new UnsupportedOperationException("Implementa groupAnagramsImperative");
+        Map<String, List<String>> groups = new HashMap<>();
+        for (String word : strs) {
+            char[] chars = word.toCharArray();
+            Arrays.sort(chars); // anagramas comparten la misma clave ordenada
+            String key = new String(chars);
+            groups.computeIfAbsent(key, ignored -> new ArrayList<>()).add(word);
+        }
+        return new ArrayList<>(groups.values());
     }
 
     public List<List<String>> groupAnagramsFunctional(String[] strs) {
-        throw new UnsupportedOperationException("Implementa groupAnagramsFunctional");
+        return Arrays.stream(strs)
+            .collect(java.util.stream.Collectors.groupingBy(word -> {
+                char[] chars = word.toCharArray();
+                Arrays.sort(chars);
+                return new String(chars);
+            }))
+            .values()
+            .stream()
+            .toList();
     }
 }

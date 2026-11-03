@@ -12,7 +12,7 @@ public class ContainsDuplicate {
         int[] nums = {4,10,5,20, 15, 4};
         ContainsDuplicate containsDuplicate = new ContainsDuplicate();
         System.out.println("Imperative ->" + containsDuplicate.containsDuplicateImperative(nums));
-        System.out.println("Functional ->" + containsDuplicate.containsDuplicateImperative(nums));
+        System.out.println("Functional ->" + containsDuplicate.containsDuplicateFunctional(nums));
     }
 
     public boolean containsDuplicate(int[] nums) {
