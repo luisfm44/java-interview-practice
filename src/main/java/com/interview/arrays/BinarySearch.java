@@ -7,7 +7,7 @@ package com.interview.arrays;
  */
 public class BinarySearch {
 
-    public static void main(String[] args) {
+    static void main(String[] args) {
         int[] nums = {4, 5, 10, 15, 20};
         BinarySearch binarySearch = new BinarySearch();
         System.out.println("Imperative ->" + binarySearch.searchImperative(nums, 5));

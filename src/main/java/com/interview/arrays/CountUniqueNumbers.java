@@ -7,7 +7,7 @@ import java.util.HashSet;
 /** Cuenta valores distintos: [4, 2, 4, 7, 2] contiene tres valores distintos. */
 public class CountUniqueNumbers {
 
-    public static void main(String args[]){
+    static void main(String[] args){
         int[] numbers = {4, 2, 4, 7, 2};
         System.out.println(countUnique(numbers));
     }
@@ -15,8 +15,8 @@ public class CountUniqueNumbers {
 
     public static int countUnique(int[] numbers){
         Set<Integer> arregloUnique = new HashSet<>();
-        for(int i = 0; i< numbers.length; i++){
-            arregloUnique.add(numbers[i]);
+        for (int number : numbers) {
+            arregloUnique.add(number);
         }
 
         return arregloUnique.size();

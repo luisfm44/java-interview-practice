@@ -8,7 +8,7 @@ import java.util.Arrays;
  */
 public class ContainsDuplicate {
 
-    public static void main(String[] args) {
+    static void main(String[] args) {
         int[] nums = {4,10,5,20, 15, 4};
         ContainsDuplicate containsDuplicate = new ContainsDuplicate();
         System.out.println("Imperative ->" + containsDuplicate.containsDuplicateImperative(nums));
