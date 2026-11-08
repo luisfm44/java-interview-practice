@@ -1,90 +1,133 @@
 # Java Interview Practice
 
-Proyecto Maven con **Java 25 (LTS)** para practicar ejercicios típicos de entrevistas técnicas.
+Proyecto Maven con **Java 25** organizado para estudiar de menor a mayor
+complejidad: **nivel → concepto → ejercicio**.
 
-## Requisitos
+Empieza por el **[orden completo de estudio](docs/ORDEN_DE_ESTUDIO.md)**: contiene
+los 41 ejercicios, sus enlaces y el orden dentro de cada concepto. Cada package
+de ejercicios incluye un `package-info.java` con su objetivo y recorrido recomendado.
 
-- JDK 25
-- Maven 3.9+
+## Estructura por dificultad y concepto
 
-## Estructura
-
-```
+```text
 src/main/java/com/interview/
-├── arrays/        # Two Sum (resuelto), Max Subarray, Binary Search
-├── strings/       # Reverse String, Valid Anagram, Valid Palindrome, y más
-├── linkedlist/    # Reverse Linked List
-├── stacks/        # Valid Parentheses
-├── trees/         # Invert Binary Tree
-└── common/        # ListNode, TreeNode
+├── nivel01_basico/
+│   ├── p01_arrays/
+│   ├── p02_strings/
+│   ├── p03_conjuntos/             # ContainsDuplicate está aquí
+│   └── p04_mapas/
+├── nivel02_intermedio/
+│   ├── p01_busqueda/
+│   ├── p02_dospunteros/
+│   ├── p03_pilas/
+│   ├── p04_listas/
+│   ├── p05_arboles/
+│   ├── p06_agrupacion/
+│   ├── p07_greedy/
+│   ├── p08_ventanas/
+│   ├── p09_intervalos/
+│   └── p10_programaciondinamica/
+├── nivel03_avanzado/
+│   ├── p01_programaciondinamica/
+│   ├── p02_modelado/
+│   └── p03_grafos/
+├── nivel04_experto/
+│   ├── p01_ventanas/
+│   ├── p02_cache/
+│   └── p03_heaps/
+└── common/                       # ListNode y TreeNode reutilizables
 ```
 
-Repositorio de soluciones con tests JUnit en `src/test/java`. Los ejercicios originales incluyen variantes imperativas y funcionales o recursivas; los ejercicios adicionales practican conjuntos, mapas e intervalos.
+Los tests en `src/test/java/com/interview/` reflejan los mismos niveles y
+conceptos. `integracion/FunctionalVariantsTest` comprueba variantes de varios
+packages. Los números de los niveles y conceptos marcan el orden; dentro de cada
+package sigue la guía, ya que las clases conservan sus nombres originales.
+
+Los niveles indican la complejidad de aprendizaje: un ejercicio fácil de entrevista
+puede introducir una técnica que se estudia en intermedio. Algunos conceptos,
+como ventanas y programación dinámica, reaparecen con mayor dificultad en los
+niveles superiores.
 
 ## Cómo practicar
 
-1. Abre la carpeta `java-interview-practice` en Cursor.
-2. Instala **Extension Pack for Java** si no lo tienes.
-3. Elige un ejercicio (por ejemplo `MaxSubarray.java`).
-4. Intenta resolverlo antes de consultar la implementación y compara las alternativas.
-5. Ejecuta los tests de esa clase.
+1. Recorre `nivel01_basico`, `nivel02_intermedio`, `nivel03_avanzado` y
+   `nivel04_experto`, siguiendo `p01`, `p02`, etc.
+2. Dentro de cada concepto, sigue el orden de
+   [la guía](docs/ORDEN_DE_ESTUDIO.md) o de su `package-info.java`.
+3. Intenta resolver el ejercicio, explica su complejidad y ejecuta su test.
+4. Para los ocho retos pendientes de los niveles avanzado y experto, usa
+   [los contratos y la rúbrica](docs/RETOS_JAVA25.md).
+5. Practica en paralelo los [nueve laboratorios Java 25](docs/JAVA25_LABS.md),
+   también organizados por nivel y concepto, con extensiones para autoevaluarte.
 
-## Comandos
+## Requisitos y comandos
+
+Necesitas **JDK 25** y **Maven 3.9+**. Los scripts respetan `JAVA_HOME`; si no está
+definido, buscan JDK 25 en macOS y usan el Java del `PATH` en otros sistemas.
+Si el entorno selecciona otro JDK, muestran cómo corregirlo. En macOS:
 
 ```bash
-# Desde java-interview-practice/
-./scripts/mvn-java25.sh test
-
-# Solo un ejercicio
-./scripts/mvn-java25.sh test -Dtest=MaxSubarrayTest
-
-# Compilar sin tests
-./scripts/mvn-java25.sh compile
+export JAVA_HOME=$(/usr/libexec/java_home -v 25)
 ```
 
-Puedes ejecutar `mvn test` directamente con un JDK 25 o posterior. El script respeta `JAVA_HOME`; si no está definido, busca JDK 25 en macOS y usa el Java del `PATH` en otros sistemas. No contiene rutas personales.
+Desde la raíz del proyecto:
 
-## Ejercicios incluidos
+```bash
+# Toda la batería de ejercicios resueltos
+./scripts/mvn-java25.sh test
 
-| Tema | Ejercicio | Dificultad |
-|------|-----------|------------|
-| Arrays | Two Sum | Fácil |
-| Arrays | Maximum Subarray | Medio |
-| Arrays | Binary Search | Fácil |
-| Arrays | Contains Duplicate | Fácil |
-| Arrays | Intersection of Two Arrays | Fácil |
-| Arrays | Majority Element | Fácil |
-| Arrays | Merge Sorted Array | Fácil |
-| Arrays | Missing Number | Fácil |
-| Arrays | Move Zeroes | Fácil |
-| Arrays | Plus One | Fácil |
-| Arrays | Best Time to Buy and Sell Stock | Fácil |
-| Arrays | Remove Duplicates from Sorted Array | Fácil |
-| Arrays | Rotate Array | Medio |
-| Strings | Reverse String | Fácil |
-| Strings | Valid Anagram | Fácil |
-| Strings | Valid Palindrome | Fácil |
-| Strings | First Unique Character | Fácil |
-| Strings | Longest Common Prefix | Fácil |
-| Strings | Is Subsequence | Fácil |
-| Strings | Length of Last Word | Fácil |
-| Strings | Reverse Words | Medio |
-| Strings | Valid Palindrome II | Medio |
-| Strings | strStr (Find Index) | Medio |
-| Strings | Longest Substring Without Repeating | Medio |
-| Strings | Group Anagrams | Medio |
-| Linked List | Reverse Linked List | Fácil |
-| Stacks | Valid Parentheses | Fácil |
-| Trees | Invert Binary Tree | Fácil |
+# Tu ejercicio actual, en nivel01_basico/p03_conjuntos
+./scripts/mvn-java25.sh test -Dtest=ContainsDuplicateTest
 
-## Ejercicios adicionales
+# Todos los tests de un nivel o un concepto
+./scripts/mvn-java25.sh test '-Dtest=com/interview/nivel01_basico/**/*Test,!**/._*'
+./scripts/mvn-java25.sh test '-Dtest=com/interview/nivel01_basico/p03_conjuntos/*Test,!**/._*'
 
-- `CountUniqueNumbers`: cantidad de valores distintos, no de valores que aparecen una sola vez.
-- `FirstDuplicate`: primer valor que se repite durante el recorrido; devuelve `-1` si no hay repetidos.
-- `FrecuenciaTecnologica`: mapa de frecuencias que distingue mayúsculas y minúsculas.
-- `MostFrequentTechnology`: tecnología más frecuente; en empate gana la primera en aparecer y para entrada vacía devuelve `""`.
-- `NumAvailableServers`: máximo de trabajos simultáneos. Usa intervalos `[inicio, fin)`, de duración positiva; un servidor queda disponible exactamente al terminar un trabajo.
+# Evaluar un reto pendiente
+./scripts/mvn-java25.sh test -Pretos -Dtest=CoinChangeTest
 
-## Archivos locales
+# Toda la batería, incluidos los ocho retos con TODO
+./scripts/mvn-java25.sh test -Pretos
 
-`target/`, los metadatos de macOS, `.vscode/settings.json` y los archivos `*.code-workspace` quedan fuera del control de versiones. La configuración compartida de ejecución en `.vscode/launch.json` no requiere rutas locales al JDK.
+# Compilar
+./scripts/mvn-java25.sh compile
+
+# Laboratorios: todos en orden, o solo los de un nivel
+./scripts/java25-labs.sh all
+./scripts/java25-labs.sh nivel01_basico
+
+# Filtrar por estado de la característica o elegir un laboratorio
+./scripts/java25-labs.sh stable
+./scripts/java25-labs.sh preview
+./scripts/java25-labs.sh ScopedValuesLab
+```
+
+En los comandos por nivel o concepto, `!**/._*` excluye los metadatos de macOS
+que pueden crearse en la unidad externa al seleccionar tests con `-Dtest`.
+
+Los tests de los retos pendientes llevan la etiqueta `reto`, excluida por defecto.
+Al activar `-Pretos`, fallan hasta implementar sus `TODO`. Los laboratorios son
+programas con comprobaciones ejecutables y se ejecutan por separado del build
+Maven; el script habilita preview solo cuando corresponde.
+
+## Contratos de ejercicios adicionales
+
+- `CountUniqueNumbers`: cuenta valores distintos.
+- `FirstDuplicate`: devuelve el primer valor que se repite durante el recorrido;
+  devuelve `-1` si no hay repetidos.
+- `FrecuenciaTecnologica`: distingue mayúsculas y minúsculas.
+- `MostFrequentTechnology`: en empate gana la primera tecnología en aparecer;
+  para entrada vacía devuelve `""`.
+- `NumAvailableServers`: máximo de trabajos simultáneos con intervalos
+  `[inicio, fin)` de duración positiva.
+
+## Configuración del IDE
+
+Las configuraciones compartidas de `.vscode/launch.json` apuntan a los packages
+nuevos y aparecen ordenadas por nivel y concepto. También puedes ejecutar el
+`main` del archivo actual. Si conservabas un archivo abierto en su ubicación
+anterior, vuelve a abrirlo desde la nueva carpeta.
+
+`target/`, los metadatos de macOS, `.vscode/settings.json` y `*.code-workspace`
+quedan fuera del control de versiones. Los scripts y las configuraciones
+compartidas no requieren rutas personales al JDK.

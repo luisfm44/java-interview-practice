@@ -1,0 +1,40 @@
+package com.interview.nivel02_intermedio.p08_ventanas;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class LongestSubstringWithoutRepeatingTest {
+
+  private final LongestSubstringWithoutRepeating longestSubstring = new LongestSubstringWithoutRepeating();
+
+  @Test
+  void findsLongestWithoutRepeats() {
+    assertEquals(3, longestSubstring.lengthOfLongestSubstring("abcabcbb"));
+  }
+
+  @Test
+  void handlesAllSameCharacter() {
+    assertEquals(1, longestSubstring.lengthOfLongestSubstring("bbbbb"));
+  }
+
+  @Test
+  void handlesEmptyString() {
+    assertEquals(0, longestSubstring.lengthOfLongestSubstring(""));
+  }
+
+  @Test
+  void imperativeFindsLongestWithoutRepeats() {
+    assertEquals(3, longestSubstring.lengthOfLongestSubstringImperative("abcabcbb"));
+  }
+
+  @Test
+  void imperativeHandlesAllSameCharacter() {
+    assertEquals(1, longestSubstring.lengthOfLongestSubstringImperative("bbbbb"));
+  }
+
+  @Test
+  void imperativeHandlesEmptyString() {
+    assertEquals(0, longestSubstring.lengthOfLongestSubstringImperative(""));
+  }
+}

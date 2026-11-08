@@ -14,6 +14,8 @@
         <maven.compiler.release>25</maven.compiler.release>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <junit.version>5.11.4</junit.version>
+        <!-- Los retos pendientes se evalúan explícitamente con -Pretos. -->
+        <test.excludedGroups>reto</test.excludedGroups>
     </properties>
 
     <dependencies>
@@ -40,6 +42,7 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.5.2</version>
                 <configuration>
+                    <excludedGroups>${test.excludedGroups}</excludedGroups>
                     <excludes>
                         <exclude>**/*$*</exclude>
                         <!-- Metadatos de macOS en unidades externas. -->
@@ -49,4 +52,13 @@
             </plugin>
         </plugins>
     </build>
+
+    <profiles>
+        <profile>
+            <id>retos</id>
+            <properties>
+                <test.excludedGroups>ninguno</test.excludedGroups>
+            </properties>
+        </profile>
+    </profiles>
 </project>

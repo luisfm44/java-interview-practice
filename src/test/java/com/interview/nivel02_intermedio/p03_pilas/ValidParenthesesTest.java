@@ -1,0 +1,39 @@
+package com.interview.nivel02_intermedio.p03_pilas;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+class ValidParenthesesTest {
+
+  private final ValidParentheses validParentheses = new ValidParentheses();
+
+  @Test
+  void acceptsBalancedParentheses() {
+    assertTrue(validParentheses.isValid("()"));
+    assertTrue(validParentheses.isValid("()[]{}"));
+    assertTrue(validParentheses.isValid("{[]}"));
+  }
+
+  @Test
+  void rejectsUnbalancedParentheses() {
+    assertFalse(validParentheses.isValid("(]"));
+    assertFalse(validParentheses.isValid("([)]"));
+    assertFalse(validParentheses.isValid("(("));
+  }
+
+  @Test
+  void imperativeAcceptsBalancedParentheses() {
+    assertTrue(validParentheses.isValidImperative("()"));
+    assertTrue(validParentheses.isValidImperative("()[]{}"));
+    assertTrue(validParentheses.isValidImperative("{[]}"));
+  }
+
+  @Test
+  void imperativeRejectsUnbalancedParentheses() {
+    assertFalse(validParentheses.isValidImperative("(]"));
+    assertFalse(validParentheses.isValidImperative("([)]"));
+    assertFalse(validParentheses.isValidImperative("(("));
+  }
+}

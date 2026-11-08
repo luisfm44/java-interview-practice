@@ -3,149 +3,143 @@
   "configurations": [
     {
       "type": "java",
-      "name": "MostFrequentTechnology",
+      "name": "MissingNumber",
       "request": "launch",
-      "mainClass": "com.interview.arrays.MostFrequentTechnology",
-      "projectName": "java-interview-practice"
-    },
-    {
-      "type": "java",
-      "name": "FrecuenciaTecnologica",
-      "request": "launch",
-      "mainClass": "com.interview.arrays.FrecuenciaTecnologica",
-      "projectName": "java-interview-practice"
-    },
-    {
-      "type": "java",
-      "name": "FirstDuplicate",
-      "request": "launch",
-      "mainClass": "com.interview.arrays.FirstDuplicate",
-      "projectName": "java-interview-practice"
-    },
-    {
-      "type": "java",
-      "name": "CountUniqueNumbers",
-      "request": "launch",
-      "mainClass": "com.interview.arrays.CountUniqueNumbers",
-      "projectName": "java-interview-practice"
-    },
-    {
-      "type": "java",
-      "name": "NumAvailableServers",
-      "request": "launch",
-      "mainClass": "com.interview.arrays.NumAvailableServers",
-      "projectName": "java-interview-practice"
-    },
-    {
-      "type": "java",
-      "name": "RemoveDuplicatesFromSortedArray",
-      "request": "launch",
-      "mainClass": "com.interview.arrays.RemoveDuplicatesFromSortedArray",
+      "mainClass": "com.interview.nivel01_basico.p01_arrays.MissingNumber",
       "projectName": "java-interview-practice"
     },
     {
       "type": "java",
       "name": "PlusOne",
       "request": "launch",
-      "mainClass": "com.interview.arrays.PlusOne",
-      "projectName": "java-interview-practice"
-    },
-    {
-      "type": "java",
-      "name": "MoveZeroes",
-      "request": "launch",
-      "mainClass": "com.interview.arrays.MoveZeroes",
-      "projectName": "java-interview-practice"
-    },
-    {
-      "type": "java",
-      "name": "MissingNumber",
-      "request": "launch",
-      "mainClass": "com.interview.arrays.MissingNumber",
-      "projectName": "java-interview-practice"
-    },
-    {
-      "type": "java",
-      "name": "MergeSortedArray",
-      "request": "launch",
-      "mainClass": "com.interview.arrays.MergeSortedArray",
-      "projectName": "java-interview-practice"
-    },
-    {
-      "type": "java",
-      "name": "MajorityElement",
-      "request": "launch",
-      "mainClass": "com.interview.arrays.MajorityElement",
-      "projectName": "java-interview-practice"
-    },
-    {
-      "type": "java",
-      "name": "IntersectionOfTwoArrays",
-      "request": "launch",
-      "mainClass": "com.interview.arrays.IntersectionOfTwoArrays",
-      "projectName": "java-interview-practice"
-    },
-    {
-      "type": "java",
-      "name": "ContainsDuplicate",
-      "request": "launch",
-      "mainClass": "com.interview.arrays.ContainsDuplicate",
-      "projectName": "java-interview-practice"
-    },
-    {
-      "type": "java",
-      "name": "TwoSum",
-      "request": "launch",
-      "mainClass": "com.interview.arrays.TwoSum",
-      "projectName": "java-interview-practice"
-    },
-    {
-      "type": "java",
-      "name": "MaxSubarray",
-      "request": "launch",
-      "mainClass": "com.interview.arrays.MaxSubarray",
-      "projectName": "java-interview-practice"
-    },
-    {
-      "type": "java",
-      "name": "BinarySearch",
-      "request": "launch",
-      "mainClass": "com.interview.arrays.BinarySearch",
+      "mainClass": "com.interview.nivel01_basico.p01_arrays.PlusOne",
       "projectName": "java-interview-practice"
     },
     {
       "type": "java",
       "name": "LongestCommonPrefix",
       "request": "launch",
-      "mainClass": "com.interview.strings.LongestCommonPrefix",
+      "mainClass": "com.interview.nivel01_basico.p02_strings.LongestCommonPrefix",
       "projectName": "java-interview-practice"
     },
     {
       "type": "java",
-      "name": "IsSubsequence",
+      "name": "ContainsDuplicate",
       "request": "launch",
-      "mainClass": "com.interview.strings.IsSubsequence",
+      "mainClass": "com.interview.nivel01_basico.p03_conjuntos.ContainsDuplicate",
       "projectName": "java-interview-practice"
     },
     {
       "type": "java",
-      "name": "GroupAnagrams",
+      "name": "CountUniqueNumbers",
       "request": "launch",
-      "mainClass": "com.interview.strings.GroupAnagrams",
+      "mainClass": "com.interview.nivel01_basico.p03_conjuntos.CountUniqueNumbers",
+      "projectName": "java-interview-practice"
+    },
+    {
+      "type": "java",
+      "name": "FirstDuplicate",
+      "request": "launch",
+      "mainClass": "com.interview.nivel01_basico.p03_conjuntos.FirstDuplicate",
+      "projectName": "java-interview-practice"
+    },
+    {
+      "type": "java",
+      "name": "IntersectionOfTwoArrays",
+      "request": "launch",
+      "mainClass": "com.interview.nivel01_basico.p03_conjuntos.IntersectionOfTwoArrays",
       "projectName": "java-interview-practice"
     },
     {
       "type": "java",
       "name": "FirstUniqueCharacter",
       "request": "launch",
-      "mainClass": "com.interview.strings.FirstUniqueCharacter",
+      "mainClass": "com.interview.nivel01_basico.p04_mapas.FirstUniqueCharacter",
       "projectName": "java-interview-practice"
     },
     {
       "type": "java",
-      "name": "Run archivo actual (main)",
+      "name": "FrecuenciaTecnologica",
       "request": "launch",
-      "mainClass": "${file}"
+      "mainClass": "com.interview.nivel01_basico.p04_mapas.FrecuenciaTecnologica",
+      "projectName": "java-interview-practice"
+    },
+    {
+      "type": "java",
+      "name": "MostFrequentTechnology",
+      "request": "launch",
+      "mainClass": "com.interview.nivel01_basico.p04_mapas.MostFrequentTechnology",
+      "projectName": "java-interview-practice"
+    },
+    {
+      "type": "java",
+      "name": "TwoSum",
+      "request": "launch",
+      "mainClass": "com.interview.nivel01_basico.p04_mapas.TwoSum",
+      "projectName": "java-interview-practice"
+    },
+    {
+      "type": "java",
+      "name": "BinarySearch",
+      "request": "launch",
+      "mainClass": "com.interview.nivel02_intermedio.p01_busqueda.BinarySearch",
+      "projectName": "java-interview-practice"
+    },
+    {
+      "type": "java",
+      "name": "IsSubsequence",
+      "request": "launch",
+      "mainClass": "com.interview.nivel02_intermedio.p02_dospunteros.IsSubsequence",
+      "projectName": "java-interview-practice"
+    },
+    {
+      "type": "java",
+      "name": "MergeSortedArray",
+      "request": "launch",
+      "mainClass": "com.interview.nivel02_intermedio.p02_dospunteros.MergeSortedArray",
+      "projectName": "java-interview-practice"
+    },
+    {
+      "type": "java",
+      "name": "MoveZeroes",
+      "request": "launch",
+      "mainClass": "com.interview.nivel02_intermedio.p02_dospunteros.MoveZeroes",
+      "projectName": "java-interview-practice"
+    },
+    {
+      "type": "java",
+      "name": "RemoveDuplicatesFromSortedArray",
+      "request": "launch",
+      "mainClass": "com.interview.nivel02_intermedio.p02_dospunteros.RemoveDuplicatesFromSortedArray",
+      "projectName": "java-interview-practice"
+    },
+    {
+      "type": "java",
+      "name": "GroupAnagrams",
+      "request": "launch",
+      "mainClass": "com.interview.nivel02_intermedio.p06_agrupacion.GroupAnagrams",
+      "projectName": "java-interview-practice"
+    },
+    {
+      "type": "java",
+      "name": "MajorityElement",
+      "request": "launch",
+      "mainClass": "com.interview.nivel02_intermedio.p07_greedy.MajorityElement",
+      "projectName": "java-interview-practice"
+    },
+    {
+      "type": "java",
+      "name": "NumAvailableServers",
+      "request": "launch",
+      "mainClass": "com.interview.nivel02_intermedio.p09_intervalos.NumAvailableServers",
+      "projectName": "java-interview-practice"
+    },
+    {
+      "type": "java",
+      "name": "MaxSubarray",
+      "request": "launch",
+      "mainClass": "com.interview.nivel02_intermedio.p10_programaciondinamica.MaxSubarray",
+      "projectName": "java-interview-practice"
     },
     {
       "type": "java",
@@ -153,6 +147,12 @@
       "request": "launch",
       "mainClass": "${file}",
       "console": "integratedTerminal"
+    },
+    {
+      "type": "java",
+      "name": "Run archivo actual (main)",
+      "request": "launch",
+      "mainClass": "${file}"
     }
   ]
 }
